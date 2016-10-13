@@ -8,20 +8,21 @@
   border-radius: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
-  box-shadow: 0px 1px 3px #2a2a2a;
-  background: url('hexabump.png')
+  box-shadow: 0px 1px 6px #2a2a2a;
+  background: url('restaurant.png');
+  border-width: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #4c4c4c;
 }
 
 .navbar-inverse a.navbar-brand {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
   color: white;
-}
-
-.navbar-inverse a.navbar-brand {
-  color: #1CFFBF;
-  font-size: 26px;
-  font-family: 'Arvo', cursive;
+  font-size: 32px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px;
 }
 
 .hero {
@@ -39,20 +40,20 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty {
-  background:rgba(0,0,0,0.5);
+  background:rgba(57, 95, 95, 0.4);
   color:white;
 }
 
 .frosty h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
-  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+  text-shadow: rgba(0,0,0,0.5) 1px 1px;
 }
 
 .frosty h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
-  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+  text-shadow: rgba(0,0,0,0.5) 1px 1px;
 }
 
 .btn {
@@ -89,4 +90,32 @@ body {
   border-radius: 3px;
   padding:8px;
   margin: 10px;
+}
+
+.img-responsive {
+  margin: auto;
+}
+
+.lesson {
+  background-color: black;
+  margin-top: 10px;
+  height: 130px;
+}
+
+.lesson a {
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.lesson a b {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
 }
