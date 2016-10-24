@@ -1,8 +1,10 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
 <script>
   $(function() {
-    $('.lessons li').hide('slow');
+    $('.lessons').sortable({
+      update: function (event, ui) {
+        alert("LessonId: " + ui.item.data('item-id') + " Index: " + ui.item.index());
+      }
+    });
   });
 </script>
 
@@ -24,7 +26,7 @@
       <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'btn btn-primary btn-xs pull-right' %>
       <ul class = "lessons">
         <% section.lessons.rank(:row_order).each do |lesson| %>
-        <li>
+        <li data-item-id=<%= lesson.id %>>
         <b><%= lesson.title %></b>
         -
         <%= lesson.subtitle %>
