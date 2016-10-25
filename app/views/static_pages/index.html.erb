@@ -12,16 +12,35 @@
 </div>
 
 <br />
+<div class="text-center">
+<h2>Featured Courses</h2>
+</div>
+<br />
 <div class="col-xs-10 col-xs-offset-1 features text-center">
-  <div class="col-sm-4">
-    <h3>Feature 1</h3>
+  <div class="col-sm-4 booyah-box feature">
+    <h3><%= Course.last.title %></h3>
+    <br />
+    <%= image_tag Course.last.image, width: '100%' %>
+    <br /><br />
+    <p><%= Course.last.description %></p>
+    <%= link_to 'View Course', course_path(Course.last), class: 'btn btn-primary pull-right' %>
   </div>
 
-  <div class="col-sm-4">
-    <h3>Feature 2</h3>
+  <div class="col-sm-4 booyah-box feature">
+    <h3><%= Course.second.title %></h3>
+    <br />
+    <%= image_tag Course.second.image, width: '100%' %>
+    <br /><br />
+    <p><%= Course.second.description %></p>
+    <%= link_to 'View Course', course_path(Course.second), class: 'btn btn-primary pull-right' %>
   </div>
 
-  <div class="col-sm-4">
-    <h3>Feature 3</h3>
+  <div class="col-sm-4 booyah-box feature">
+    <h3><%= Course.third.title %></h3>
+    <br />
+    <%= image_tag Course.third.image, width: '100%' %>
+    <br /><br />
+    <p><%= Course.third.description %></p>
+    <%= link_to 'View Course', course_path(Course.third), class: 'btn btn-primary pull-right' %>
   </div>
 </div>
