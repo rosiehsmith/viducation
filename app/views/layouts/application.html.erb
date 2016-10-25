@@ -59,9 +59,44 @@
 
   <div id="footer">
     <div class="container">
-      <b>Instructors</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', 'https://rosiehighsmith.github.io/' %>
+        <br />
+        <%= link_to 'Careers', 'http://stackoverflow.com/jobs' %>
+        <br />
+        <%= link_to 'Privacy Policy', 'https://en.wikipedia.org/wiki/Privacy_policy' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        rosie.highsmith@gmail.com
+        <br />
+        Hillcrest Neighborhood
+        <br />
+        San Diego, CA 92103
+      </div>
+      <div class="col-xs-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <%= link_to 'http://github.com/rosiehighsmith' do %>
+          <%= image_tag 'github.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'http://twitter.com/rosiehighsmith' do %>
+          <%= image_tag 'twitter.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'http://linkedin.com/in/rosiehighsmith' do %>
+          <%= image_tag 'linkedin.png', class: 'social-button' %>
+        <% end %>
+      </div>
     </div>
   </div>
 
