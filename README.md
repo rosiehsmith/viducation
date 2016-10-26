@@ -24,5 +24,17 @@ Viducation is a two-sided video streaming learning platform, similar to Coursera
 
 ## App Snapshot
 
-TBD
+Each lesson has a custom video lesson:
+
+![alt tag](http://i.imgur.com/5SlAwMv.png)
+
+A preview of the Stripe payment modal for premium courses:
+
+![alt tag](http://i.imgur.com/P3E6stt.png)
+
+Advanced interactive administration features like drag and drop of lessons and sections:
+
+![alt tag](http://i.imgur.com/N0WzemG.png)
+
+
 
