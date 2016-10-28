@@ -32,7 +32,10 @@
           <%= link_to 'See All Courses', courses_path %>
         </li>
         <li>
-          <%= link_to 'Create a Course', new_instructor_course_path %>
+          <%= link_to new_instructor_course_path do %>
+            <i class = "glyphicon glyphicon-plus-sign"></i>
+            Create a Course
+          <% end %>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
