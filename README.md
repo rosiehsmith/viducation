@@ -36,5 +36,7 @@ Advanced interactive administration features like drag and drop of lessons and s
 
 ![alt tag](http://i.imgur.com/N0WzemG.png)
 
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=rosiehsmith&show_icons=true)
+
 
 
